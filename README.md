@@ -30,27 +30,27 @@ NexoUp busca ayudar a emprendedores y comerciantes, con distintos niveles de exp
 **Paso 1. Configurar la base de datos**
 - Iniciar PostgreSQL y crear la base de datos NexoUp si todavia no existe (CREATE DATABASE "Nexoup";).
 - la conexion utilizada por el backend es local:
-  Host: localhost
-  Puerto: 5432
-  Base de datos: Nexoup
+  -Host: localhost
+  -Puerto: 5432
+  -Base de datos: Nexoup
 **Paso 2. Instalar las dependencias del frontend**
   - Abrir PowerShell en la carpeta dek proyecto y ejecutar:
- cd Frontend
+ - cd Frontend
  npm.cmd install
 **Paso 3. Configurar el backend**
 - En el archivo application.properties del backend esta configurada de esta manera:
-spring.datasource.url=jdbc:postgresql://localhost:5432/NexoUp
-spring.datasource.username=postgres
-spring.datasource.password=TU_CONTRASEÑA
-Reemplazar TU_CONTRASEÑA por la contraseña configurada en PostgreSQL.
+-spring.datasource.url=jdbc:postgresql://localhost:5432/NexoUp
+-spring.datasource.username=postgres
+- spring.datasource.password=TU_CONTRASEÑA
+- Reemplazar TU_CONTRASEÑA por la contraseña configurada en PostgreSQL.
 **Ejecución del backend**
   -Desde IntelliJ IDEA, ejecutar la clase principal com.nexoup.backend.BackendApplication. El servidor se inicia en el puerto 8080.
   **Ejecución del frontend**
 -Desde la carpeta Frontend, ejecutar:
-npm.cmd run dev
+- npm.cmd run dev
 Finalmente, ingresar desde el navegador a:
-http://localhost:5173
-Para utilizar el sistema correctamente, PostgreSQL y el backend deben estar en funcionamiento antes de iniciar el frontend.
+- http://localhost:5173
+- Para utilizar el sistema correctamente, PostgreSQL y el backend deben estar en funcionamiento antes de iniciar el frontend.
 ## Estado del Proyecto
 - **Sprints registrados en Issues:** Sprint 1, Sprint 2, Sprint 3 y Sprint 4.
 - **Estado actual de Issues:** 13 abiertos / 0 cerrados (revisar y actualizar según el avance real).
