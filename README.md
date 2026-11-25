@@ -2,7 +2,7 @@
 
 Aplicacion web diseñada para facilitar la gestion de negocios minoristas, pequeños comercios y kioscos, permitiendo controlar ventas, stock,pagos, proveedores y finanzas  de forma simple y eficiente.
 
-## 📖 Documentación y Wiki
+##  Documentación y Wiki
 la información detallada, guías y documentos del proyecto se encuentran  en la Wiki.
 
 👉 **[Haz clic aquí para ir a la Wiki del proyecto](https://github.com/celer2001/NexoUp/wiki)**
