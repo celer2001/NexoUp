@@ -27,25 +27,35 @@ NexoUp busca ayudar a emprendedores y comerciantes, con distintos niveles de exp
 - Java JDK 21.
 - PostgreSQL.
 - Un entorno de desarrollo como IntelliJ IDEA o Visual Studio Code.
+  
 **Paso 1. Configurar la base de datos**
+
 - Iniciar PostgreSQL y crear la base de datos NexoUp si todavia no existe (CREATE DATABASE "Nexoup";).
 - la conexion utilizada por el backend es local:
   -Host: localhost
   -Puerto: 5432
   -Base de datos: Nexoup
+  
 **Paso 2. Instalar las dependencias del frontend**
+
   - Abrir PowerShell en la carpeta dek proyecto y ejecutar:
  - cd Frontend
  npm.cmd install
+
 **Paso 3. Configurar el backend**
+
 - En el archivo application.properties del backend esta configurada de esta manera:
 -spring.datasource.url=jdbc:postgresql://localhost:5432/NexoUp
 -spring.datasource.username=postgres
 - spring.datasource.password=TU_CONTRASEÑA
 - Reemplazar TU_CONTRASEÑA por la contraseña configurada en PostgreSQL.
-**Ejecución del backend**
+- 
+**Paso 4.Ejecución del backend**
+  
   -Desde IntelliJ IDEA, ejecutar la clase principal com.nexoup.backend.BackendApplication. El servidor se inicia en el puerto 8080.
-  **Ejecución del frontend**
+  
+  **Paso 5.Ejecución del frontend**
+  
 -Desde la carpeta Frontend, ejecutar:
 - npm.cmd run dev
 Finalmente, ingresar desde el navegador a:
